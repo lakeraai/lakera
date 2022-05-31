@@ -19,17 +19,18 @@
 
 # :pencil2: What is Lakera's MLTest?
 
-Lakera's MLTest **finds critical performance vulnerabilities** in computer vision systems before they enter operation.
+Lakera's MLTest **finds critical performance vulnerabilities** in computer vision systems and allows you to easily fix them before they enter operation.
 
-You can think of it as having a **safety expert** at your fingertips that makes sure your models work as expected when put into operation. 
+You can think of MLTest as your trusted **safety expert** that knows how to ensure that your models work as expected once deployed. 
 
 MLTest **completely automates testing** of computer vision systems - something that has previously consumed special knowledge and significant resources.
 
 So what are the **main benefits** of using MLTest?
 
-* You reduce iteration time because you know exactly which issues to fix next.
-* You develop faster because you don't have to set up complex testing infrastructure.
-* Your development iterations become a lot more structured which means you'll develop much better models.
+* You understand where your models are likely to fail.
+* You know exactly which issues to focus on, which to fix next, meaning you can reduce iteration time.
+* You don't have to set up complex testing infrastructure as MLTest provides that out of the box, meaning you can focus on what really matters and develop faster.
+* You can showcase progress to team members, management, and customers easily.
 
 MLTest is **designed privacy-first**. This means that while it's super easy to set up and configure, it completely runs on-premise – your data and models never leave your infrastructure.
 
@@ -82,7 +83,7 @@ evaluator.run()
 
 # :factory: CI/CD
 
-MLTest **completely automates testing as part of CI/CD**. You can think of MLTest as a quality gate that absorbs the complexity of testing while you focus on building the best-possible models.
+MLTest **completely automates testing as part of existing CI/CD pipeliens**. You can think of MLTest as a quality gate that absorbs the complexity of testing while you focus on building the best-possible models.
 
 To achieve that, MLTest can easily be packaged as a **Docker container** and can run as part of CI/CD pipelines (GitLab CI/CD, GitHub Actions, etc.).
 
