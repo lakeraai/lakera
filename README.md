@@ -27,7 +27,7 @@ MLTest **completely automates testing** of computer vision systems - something t
 
 So what are the **main benefits** of using MLTest?
 
-* You understand where your models are likely to fail.
+* You automate testing and understand where your models are likely to fail at close to zero overhead.
 * You know exactly which issues to focus on, which to fix next, thus significantly reducing iteration time.
 * You don't have to set up complex testing infrastructure as MLTest provides that out of the box, meaning you can focus on what really matters and develop faster.
 * You can showcase progress to team members, management, and customers easily.
@@ -40,7 +40,7 @@ MLTest finds systematic performance drops and robustness issues in your models. 
 
 * **Stress tests**: Automatically profile your models against real-world variations in the input, detect (un)stable input regions of your model and highlights them to you.
 
-* **Failure clustering**: MLTest automatically clusters failure cases of your models to highlight systematic performance drops.
+* **Failure clustering**: MLTest automatically identifies and clusters failure cases of your models to highlight systematic performance drops.
 
 * **Performance unit tests**: These tests detects and highlight slices of your dataset where the model exhibits lower performance than expected.
 
@@ -48,15 +48,19 @@ MLTest finds systematic performance drops and robustness issues in your models. 
 
 * **Robustness unit tests**: These tests generate additional synthetic data to test your model against real-world variations in the input.
 
+:bulb: We are constantly extending MLTest's model capabilities. Have a particular need? Get in touch with us! :grinning:
+
 ## 2. Data testing
 
 No model evaluation is complete without taking a look at the data as well. MLTest can run the following data tests:
 
-* **Representativity tests**: Clustering of underrepresentative data slices and biases.
+* **Representativity tests**: MLTest automatically identifies and clusters underrepresentative data slices and biases to guide your data collection efforts.
 
 * **Metadata representativity tests**: Identify underrepresentative data slices and biases based on metadata.
 
 * **Shortcut tests**: Extract signals from your datasets that may lead to shortcut learnings.
+
+:bulb: We are constantly extending MLTest's data capabilities. Have a particular need? Get in touch with us! :grinning:
 
 ## 3. MLTest Dashboard
 
