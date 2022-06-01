@@ -23,12 +23,12 @@ Lakera's MLTest **finds critical performance vulnerabilities** in computer visio
 
 You can think of MLTest as your trusted **safety expert** that knows how to ensure that your models work as expected once deployed. 
 
-MLTest **completely automates testing** of computer vision systems - something that has previously consumed special knowledge and significant resources.
+MLTest **completely automates testing** of computer vision systems - something that has previously required expert knowledge and significant resources.
 
 So what are the **main benefits** of using MLTest?
 
 * You understand where your models are likely to fail.
-* You know exactly which issues to focus on, which to fix next, meaning you can reduce iteration time.
+* You know exactly which issues to focus on, which to fix next, thus significantly reducing iteration time.
 * You don't have to set up complex testing infrastructure as MLTest provides that out of the box, meaning you can focus on what really matters and develop faster.
 * You can showcase progress to team members, management, and customers easily.
 
@@ -38,18 +38,23 @@ MLTest is **designed privacy-first**. This means that while it's super easy to s
 
 MLTest finds systematic performance drops and robustness issues in your models. It can run the following tests:
 
-* **Performance unit tests**: These tests detects and highlight slices of your dataset where the model exhibits lower performance than expected.
-* **Metadata unit tests**: Ensure that models never drop below a certain performance threshold for dataset slices specified through metadata.
-* **Robustness unit tests**: These tests generate additional synthetic data to test your model against real-world variations in the input.
 * **Stress tests**: Automatically profile your models against real-world variations in the input, detect (un)stable input regions of your model and highlights them to you.
+
+* **Failure clustering**: MLTest automatically clusters failure cases of your models to highlight systematic performance drops.
+
+* **Performance unit tests**: These tests detects and highlight slices of your dataset where the model exhibits lower performance than expected.
+
+* **Metadata unit tests**: Ensure that models never drop below a certain performance threshold for dataset slices specified through metadata.
+
+* **Robustness unit tests**: These tests generate additional synthetic data to test your model against real-world variations in the input.
 
 ## 2. Data testing
 
 No model evaluation is complete without taking a look at the data as well. MLTest can run the following data tests:
 
-* **Representativity tests**: These tests identify underrepresentative data slices and biases.
+* **Representativity tests**: Clustering of underrepresentative data slices and biases.
 
-* **Metadata tests**: Identify underrepresentative data slices and biases based on metadata.
+* **Metadata representativity tests**: Identify underrepresentative data slices and biases based on metadata.
 
 * **Shortcut tests**: Extract signals from your datasets that may lead to shortcut learnings.
 
